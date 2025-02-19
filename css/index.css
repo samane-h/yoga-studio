@@ -1,0 +1,74 @@
+@charset "utf-8"; 
+/* CSS Document Thema metatags - 3 Spalten Layout */
+
+*{box-sizing: border-box;}
+
+body{font-family:"Trebuchet MS", Verdana, sans-serif;
+	margin: 0;
+
+}
+
+.content{background-image: url( "../pics/yoga-1313115_1920.jpg"); 
+	height: 80vh;
+	width: 90vw;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: auto;
+	position: relative;
+	display: flex;
+	top: 8.5rem;
+}
+
+.header{background-color: rgba(68,157,240,0.0); 
+	padding:1rem;
+	margin-bottom: 1rem;
+	margin-top: 6rem;
+}
+
+.fade-in-text {z-index: 1000;
+	position: fixed;
+    opacity: 0;
+    animation: fadeIn 7s forwards;
+    animation-delay: 1s;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	font-size: 2rem;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;
+    } 
+    to {opacity: 1;
+    }}
+
+@media (max-width: 1000px){
+	.content h1{font-size: 1.9rem;
+				top: 40%;
+				left: 33%;}
+    		 p {font-size: 0.8rem;}} 
+
+@media (max-width: 800px) {
+	.content h1{font-size: 1.85rem;
+				top: 70%;
+				left: 20%;}
+        	 p {font-size: 0.8rem;}
+	.content   {background-image: url(  "../pics/yoga-1313118_1920.jpg");}}
+
+@media (max-width: 610px) {
+	.content h1{font-size: 1.25rem;}	
+			 p {font-size: 0.8rem;}}
+        
+
+       
+    
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{font-family:"Playwrite AT", cursive; 
+src: url( "../font/PlaywriteAT-Italic-VariableFont_wght.ttf");}
+
+* { box-sizing: border-box;}
+
+
+body {font-family: Helvetica, Arial, "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {background-color: rgba(0,0,0,0.03);
+max-width: 100rem; /**//*1000px   1600/16 = 100rem;*/
+margin: 1rem auto;
+padding: 0.625rem;
+padding-top: 1rem;
+}
+
+header {font-family:"Playwrite AT"; 
+    position: fixed;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+section {
+background-color: rgba(50,57,67,0.15);
+/*background-color: rgba(140,8,8,0.05);*/
+margin-bottom: 0.625rem;
+padding: 1rem;
+justify-content: space-between;
+align-items: center;
+
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;/**/
+	
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem  1rem ;
+	font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    background: #555;
+    border-radius: 5px;}
+
+
+.logo img{border-radius: 50%;
+width: 50px;
+height: 50px;/**/}
+
+.logo {display: flex;}
+
+.logo span{padding-top: 1rem;
+padding-left:1rem;
+font-style: normal;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+.content h1{font-size: 2.5rem;
+font-family: "Playwrite AT";}
+
+@media (max-width: 800px) {
+    .nav-links {justify-content: center;
+        display: none;
+        /*flex-direction: column;*/
+        background: rgba(19,18,18,0.50);
+        position: absolute;
+        top: 75%;
+        right: 0;
+		gap:0.3rem;
+		width: 100%;
+		height: 3rem;}
+	.nav-links.nav-active {display: flex;}
+    .nav-links li {margin: 0.8rem 0.2rem;}/**/
+    .nav-links li a {font-size: 0.9rem;}	
+    .hamburger-menu {display: flex;}}
+    
+
+@media (max-width: 1000px){
+	#wrapper  h1 {font-size: 2.0rem;}
+    		  p {font-size: 0.8rem;}} 
+
+@media (max-width: 800px) {
+  #wrapper  h1 {font-size: 1.5rem;}
+        	p {font-size: 0.8rem;}}
+
+@media (max-width: 600px) {
+  #wrapper  h1 {font-size: 1.0rem;}
+      	    p {font-size: 0.8rem;}}
+
+
+
+
+   
+        
+    
+

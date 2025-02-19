@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+section {
+background-color: rgba(0,0,0,0.12);
+/*background-color: rgba(4,60,83,0.17);*/}
+
+
+
+.slideshow {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;/**/
+    overflow: hidden;
+    position: relative;
+	
+}
+
+.slides img {
+    width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+	
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.image-container, .text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    box-sizing: border-box;
+    padding:5px 10px;
+		 
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+	margin: 0 5rem;
+}
+
+.text-container {margin: 0 10rem;
+    padding:10px 20px;
+	line-height: 2rem;
+}
+
+.name{font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*.img{background-image:url( "../pics/zen-5533537_1920.jpg");url( "../pics/1-2yoga.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: rgba(0,0,0) transparent;
+	
+	height: 100px;
+	width: 100%;}*/
+
+@media (max-width: 1000px) {
+    .content-section {
+        flex-direction: column;}
+	.text-container {
+        width: 90%;
+	line-height:normal;}
+    .image-container{
+        width: 85%;} 
+	
+	.content-section:nth-child(even) .image-container {
+  		order: 2;}
+
+	.content-section:nth-child(even) .text-container {
+	  order: 1;}}
+
+@media(max-width: 1300px){
+	.text-container {
+	margin: 0;
+	line-height:1.5rem;}
+
+	.image-container {
+    margin: 0;
+	padding: 0;}}
+
+
+
+/**/	
+
+
